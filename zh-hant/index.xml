@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mdl.life</title>
+    <title>MDL</title>
     <link>http://mdl.life/zh-hant/index.xml</link>
-    <description>Recent content on mdl.life</description>
+    <description>Recent content on MDL</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 08 Oct 2017 00:00:00 +0000</lastBuildDate>
