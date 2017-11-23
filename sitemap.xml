@@ -9,13 +9,6 @@
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>http://mdl.life/ru/sitemap.xml</loc>
-		
-	   	<lastmod>2017-10-30T00:00:00+00:00</lastmod>
-		
-	</sitemap>
-	
-	<sitemap>
 	   	<loc>http://mdl.life/kr/sitemap.xml</loc>
 		
 	   	<lastmod>2017-11-14T00:00:00+00:00</lastmod>
@@ -30,9 +23,14 @@
 	</sitemap>
 	
 	<sitemap>
-	   	<loc>http://mdl.life/zh-hant/sitemap.xml</loc>
+	   	<loc>http://mdl.life/ru/sitemap.xml</loc>
 		
-	   	<lastmod>2017-11-14T00:00:00+00:00</lastmod>
+	   	<lastmod>2017-10-30T00:00:00+00:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>http://mdl.life/zh-hant/sitemap.xml</loc>
 		
 	</sitemap>
 	
