@@ -41,6 +41,8 @@
                
                 <li><a href="#home">Home</a></li>
                
+                <li><a href="#video">Video</a></li>
+               
                 <li><a href="#problems">Problems</a></li>
                
                 <li><a href="#our-tool">Our tool</a></li>
@@ -91,20 +93,14 @@
       </div>
     </div>
   </header>
-<div id="video">
-      <div class="container">
-      <h2 class="module-title">Video Introduction</h2>
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <video width="100%" controls src="https://gateway.ipfs.io/ipfs/QmVBECcf1tMtmu4mSXivXJj3NQr9kWjvQrWYpWikEB3ReB/MDL%20Intro%20Video.mp4">
-            Sorry, your browser doesn't support embedded videos,
-            but don't worry, you can <a href="https://gateway.ipfs.io/ipfs/QmVBECcf1tMtmu4mSXivXJj3NQr9kWjvQrWYpWikEB3ReB/MDL%20Intro%20Video.mp4">download it</a>
-            and watch it with your favorite video player!
-            </video>
-          </div>
-        </div>
-      </div>
-    </div>
+
+<div id="video-presentation">
+ <h2 class="module-title">VIDEO INTRODUCTION</h2>
+  <video controls poster="/img/video-thumbnail.jpg">
+    <source src = "https://gateway.ipfs.io/ipfs/QmVBECcf1tMtmu4mSXivXJj3NQr9kWjvQrWYpWikEB3ReB/MDL%20Intro%20Video.mp4" type = "video/mp4">
+  </video>
+  <i id = "video-btn" class="fa fa-play-circle-o" aria-hidden="true"></i>
+</div>
 
 <div id="problems">
       <div class="container">
@@ -305,6 +301,32 @@
     </div>
   </div>
 
+<div id="mentor-board">
+    <h2 class="module-title">Mentors & Advisors</h2>
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li>
+            <div class = "mentor-photo-wrapper">
+              <img src="img/advisor.png" alt="Jevgenij Konn">
+              <span class="mentor-position">Advisor</span>
+              <span class="mentor-name">Jevgenij Konn</span>
+            </div>
+            <p>Business administration and finance alumni of Heinrich Heine University of Düsseldorf. With over 15 years working in banking and corporate industries in Germany, he acquired profound knowledge and expertise in topics, related to financial markets, treasury and small-cap companies financing. Relocated to Shanghai 3 years ago to lead Asia-Pacific Treasury Department for a DAX-member German multinational company. CFA® charterholder.</p>
+          </li>
+          <li>
+            <div class = "mentor-photo-wrapper">
+              <img src="img/mentor.png" alt="Samuel Doe">
+              <span class="mentor-position">Mentor</span>
+              <span class="mentor-name">Samuel Doe</span>
+            </div>
+            <p>Samuel Doe is a serial entrepreneur with over 28 years’ of experience across various industries such as: video games/software development, mobile, internet, social media, digital vending, maritime, and automotive.He specializes in developing and bringing to market early stage startups and scale-ups – with a strong focus on monetization. He has successfully founded and sold 4 of his startups in the USA.Samuel has personally worked with: Intel, HP, Microsoft, Symantec, Google, Yahoo, Excite, EA, Nintendo, Sony, Sega, Midway, Activision, Hasbro, Mattel, Vivendi Universal, Digital Domain, Lucas Arts, Dream Works, Samsung, Motorola, Texas Instruments, Westfield Group, Simon Group; as well as other reputable technological organizations</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+
 <div id="roadmap">
     <div class="container">
     <h2 class="module-title">Roadmap</h2>
@@ -314,13 +336,13 @@
             <ul>
               <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.2s">October <span>2017</span></li>
               <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.3s">December <span>2017</span></li>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.4s">February <span>2018</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.4s">May <span>2018</span></li>
             </ul>
           </div>
           <div class="col-md-5 col-sm-8 col-xs-7 event-wrapper">
             <ul>
               <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.2s">Launch of Website and blog, MDL Token issue</li>
-              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.3s">GUI+BC prototype</li>
+              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.3s">GUI prototype</li>
               <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.4s">MVP launch</li>
             </ul>
           </div>
@@ -329,14 +351,14 @@
         <div class="row">
           <div class="col-md-2 col-sm-3 col-xs-5 col-md-offset-2 date-wrapper">
             <ul>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.5s">August <span>2018</span></li>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.6s">September <span>2018</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.5s">December <span>2018</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.6s">March <span>2019</span></li>
             </ul>
           </div>
           <div class="col-md-5 col-sm-8 col-xs-7 event-wrapper">
             <ul>
-              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.5s">Round A investments</li>
-              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.6s">Alpha Launch, entry to Shanghai market </li>
+              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.5s">Beta Launch, entry to Shanghai market</li>
+              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.6s">Round A investments</li>
             </ul>
           </div>
         </div>
@@ -344,15 +366,15 @@
         <div class="row">
           <div class="col-md-2 col-sm-3 col-xs-5 col-md-offset-2 date-wrapper">
             <ul>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.7s">April <span>2019</span></li>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.8s">May <span>2019</span></li>
-              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.9s">July <span>2019</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.7s">July <span>2019</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.8s">August <span>2019</span></li>
+              <li class = "wow fadeInLeft" data-wow-duration = "1.5s" data-wow-delay = "0.9s">October <span>2019</span></li>
             </ul>
           </div>
           <div class="col-md-5 col-sm-8 col-xs-7 event-wrapper">
             <ul>
-              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.7s">Beta Launch</li>
-              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.8s">Round B investment</li>
+              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.7s">Implementation of BC & PIDS components</li>
+              <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.8s">Entry to entire China market</li>
               <li class = "wow fadeInRight" data-wow-duration = "1.5s" data-wow-delay = "0.9s">Entry to local talent sourcing markets in entire Asia</li>
             </ul>
           </div>
@@ -360,6 +382,7 @@
       </div>
     </div>
   </div>
+
 <footer>
     <div class="container">
       <div class="row">
