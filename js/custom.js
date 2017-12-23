@@ -1,7 +1,7 @@
 
 /* Sticky haeder-menu */
 $(window).scroll(function() {
-if ($(this).scrollTop() > 565){  
+if ($(this).scrollTop() > 565){
     $('#nav-menu').addClass("sticky");
   }
   else{
@@ -14,7 +14,7 @@ if ($(this).scrollTop() > 565){
 
 /* Active menu changer*/
 var menu_selector = "#nav-menu";
- 
+
 function onScroll(){
 
     var scroll_top = $(document).scrollTop();
@@ -29,11 +29,11 @@ function onScroll(){
         }
     });
 }
- 
+
 $(document).ready(function () {
- 
+
     $(document).on("scroll", onScroll);
- 
+
     $("#top-menu-wr a[href^='#'], footer a[href^='#']").click(function(e){
         e.preventDefault();
         $(document).off("scroll");
@@ -48,7 +48,7 @@ $(document).ready(function () {
             $(document).on("scroll", onScroll);
         });
     });
- 
+
 });
 /* end active menu changer*/
 
@@ -89,5 +89,36 @@ $(document).ready(function () {
           $(this).addClass('fa-pause-circle-o');
       }
       return false;
+  });
+});
+
+
+Number.prototype.format = function(n, x, s, c, pre, post) {
+    var re = '\\d(?=(\\d{' + (x || 3) + '})+' + (n > 0 ? '\\D' : '$') + ')',
+        num = this.toFixed(Math.max(0, ~~n));
+
+    return pre + (c ? num.replace('.', c) : num).replace(new RegExp(re, 'g'), '$&' + (s || ',')) + post;
+};
+/*raised line*/
+$(document).ready(function () {
+
+
+  var max = $('.raised-line').attr('data-max');
+  var cur = $('.raised-line').attr('data-current');
+  var percent = (cur/max)*100;
+  $('.raised-percent').html(percent.toFixed(3) + '%');
+  $('.raised-end_score').html(parseFloat(max).format(0,3,",",".", "$", " USD"));
+  $('.raised_raised-money').html(parseFloat(cur).format(2,3,",",".", "$", " USD"));
+  $('.raised_raised-distributed').html(parseFloat(cur * 100).format(0,3,",",".", "", " MDL"));
+  $('#progress-line').css('width',percent + '%');
+  //$('.raised-total').html();
+});
+
+$(document).ready(function () {
+  $('.mentor-board_item').mouseenter(function(){
+      $(this).children('.mentor-photo-wrapper').removeClass('changed');
+  });
+  $('.mentor-board_item').mouseleave(function(){
+      $(this).children('.mentor-photo-wrapper').addClass('changed');
   });
 });
